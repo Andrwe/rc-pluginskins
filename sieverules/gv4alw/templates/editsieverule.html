@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title><roundcube:object name="pagetitle" /></title>
+<roundcube:include file="/includes/links.html" />
+<link rel="stylesheet" type="text/css" href="/this/sieverules.css" />
+<link rel="stylesheet" type="text/css" href="/this/sieverules-gv4alw.css" />
+<roundcube:if condition="browser:ie" />
+<link rel="stylesheet" type="text/css" href="/this/iehacks.css" />
+<roundcube:endif />
+<roundcube:if condition="browser:safari" />
+<link rel="stylesheet" type="text/css" href="/this/safari.css" />
+<roundcube:endif />
+<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="/this//ie6hacks.css" /><![endif]-->
+<script type="text/javascript" src="/functions.js"></script>
+</head>
+<body class="iframe">
+
+<div id="sieverules-title" class="boxtitle"><roundcube:object name="steptitle" /></div>
+<div id="sieverules-details" class="boxcontent">
+  <div id="sieverules-body">
+  <roundcube:object name="sieveruleform" helpIcon="/this/help.gif" />
+  </div>
+  <p>
+    <roundcube:button command="plugin.sieverules.delete" type="input" class="button" label="delete" condition="env:action=='plugin.sieverules.edit'" style="margin-right:0.5em" />
+    <roundcube:button command="plugin.sieverules.copy_rule" type="input" class="button" label="sieverules.copy" condition="env:action=='plugin.sieverules.edit' && config:sieverules_multiplerules == true" style="margin-right:0.5em" />
+    <roundcube:button command="plugin.sieverules.save" type="input" class="button mainaction" label="save" />
+  </p>
+</div>
+
+</body>
+</html>

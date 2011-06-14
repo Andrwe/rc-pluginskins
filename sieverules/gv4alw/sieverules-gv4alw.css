@@ -1,0 +1,39 @@
+/**
+ * SieveRules plugin styles of gv4alw
+ */
+
+#sieverules-list-filters,
+#sieverules-box #prefs-frame
+{
+  background-color: #f9f9f9;
+}
+
+#sieverules-box
+{
+  position: absolute;
+  top: 0;
+  left: 250px;
+  right: 0;
+  bottom: 0;
+  border: 1px solid #999999;
+  background-color: #f9f9f9;
+}
+
+#sieverules-details
+{
+  position: relative;
+  left: 0;
+  top: 24px;
+  border: none;
+}
+
+div#sieverules-body fieldset.tabbed
+{
+  margin: 0;
+}
+
+div#sieverules-details div.tabsbar
+{
+  border: none;
+}
+
