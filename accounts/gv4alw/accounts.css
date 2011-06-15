@@ -1,0 +1,35 @@
+.boxcontent
+{
+  top: 23px;
+  position: relative;
+}
+
+#accounts
+{
+  position: absolute;
+  top: 36px;
+  left: 10px;
+  z-index: 2000;
+}
+
+#accounts a
+{
+  font-size: 11px;
+  color: #666666;
+  padding-top: 2px;
+  padding-bottom: 2px;  
+  padding-left: 22px;
+  text-decoration: none;
+  background: url('images/user.png') 5px 1px no-repeat;
+}
+
+#accounts a:hover
+{
+  color: #333333;
+}
+
+#accounts select
+{
+  font-size: 11px;
+  width: 136px; 
+}
