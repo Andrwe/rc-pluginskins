@@ -36,6 +36,13 @@
 }
 </style>
 
+<!-- needed because the environment of settings has to loaded -->
+<roundcube:if condition="env:task != 'settings'" />
+<script type="text/javascript">
+self.location="/?_task=settings&_action=<roundcube:var name='env:action' />";
+</script>
+<roundcube:endif />
+
 </head>
 <body onload="rcube_init_mail_ui(); rcube_init_plugin_tab(); rcmail_ui.popups.sieverulesmenu = {id: 'sieverulesactionsmenu', obj:$('#sieverulesactionsmenu'), above:1};">
 
