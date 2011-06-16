@@ -1,0 +1,54 @@
+/***** Roundcube|Mail Help task styles *****/
+#helpbar
+{
+  position: absolute;
+  top: 40px;
+  left: 10px;
+}
+
+.help-box
+{
+  overflow: auto;  
+  background-color: #F2F2F2;
+}
+
+#helplicense, #helpabout
+{
+  width: 46em;
+  padding: 1em 2em;
+}
+
+#helplicense a, #helpabout a
+{
+  color: #900;
+}
+
+#helpabout
+{
+  margin: 0 auto;
+}
+
+a.button-help,
+a.button-help:hover
+{
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  padding: 4px 0 0 0;
+  margin-left: 0;
+  height: 18px;
+  width: 102px;
+  color: #4c5e75;
+  background: url('images/tab-act.png');
+}
+
+a.button-help
+{
+  color: white;
+  font-family: Tahoma,arial,"nimbus sans l",sans-serif;
+  font-size: 13px;
+  background: url(images/tab-pas.png);
+  cursor: pointer;
+  text-decoration: none;
+}
+
