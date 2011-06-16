@@ -1,0 +1,7 @@
+#listcontrols a.range {
+  background-position: -75px 0;
+}
+
+#listcontrols a.rangesel {
+  background-position: -75px -15px;
+}
