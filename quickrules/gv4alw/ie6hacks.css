@@ -1,0 +1,14 @@
+/**
+ * QuickRules plugin styles (IE6 hacks)
+ */
+
+#messagetoolbar a.quickrules,
+#messagetoolbar a.quickrulesSel
+{
+  background-image: url(mail_toolbar.gif);
+}
+
+#rcmContextMenu .quickrules a
+{
+  background-image: url(messageactions.gif);
+}

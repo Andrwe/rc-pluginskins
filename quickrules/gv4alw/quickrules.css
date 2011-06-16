@@ -1,0 +1,25 @@
+/**
+ * QuickRules plugin styles
+ */
+
+#messagetoolbar a.quickrules,
+#messagetoolbar a.quickrulesSel
+{
+  background-image: url(mail_toolbar.png);
+}
+
+#messagetoolbar a.quickrules
+{
+  background-position: 0 0;
+}
+
+#messagetoolbar a.quickrulesSel
+{
+  background-position: 0 -32px;
+}
+
+#rcmContextMenu .quickrules a
+{
+  background-image: url(messageactions.png);
+  background-position: 7px 0px;
+}
