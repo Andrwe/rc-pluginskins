@@ -1,0 +1,19 @@
+#mailboxlist li._archives a:hover
+{
+  background-position: 6px 0;
+}
+
+#rcmContextMenu .archive a
+{
+  background: url('foldericon.png') no-repeat 7px center;
+}
+
+#rcmliArchives
+{
+  left: 15px
+}
+
+#rcmliArchives a
+{
+  left: -15px
+}
