@@ -1,0 +1,18 @@
+/***** compose_newwindow | modifications to compose window *****/
+
+/* Hide the main taskbar */
+#taskbar,
+#taskbardate,
+#header,
+#logout,
+#tabsbar {
+  display: none;
+}
+
+/* adjust container positions */
+#compose-container {
+  margin-top: -55px;
+}
+#compose-attachments {
+  margin-top: -55px;
+}
