@@ -33,3 +33,18 @@
   font-size: 11px;
   width: 136px; 
 }
+
+#prefs-details div.userprefs-accountblock
+{
+  margin-right: 14px;
+  min-width: 450px;
+  padding: 5px 0px 0px 0px;
+  width: 100%; 
+}
+
+#prefs-details div.userprefs-accountblock-border
+{
+  background-color: #EBEBEB;
+  border: 1px solid #999999;
+}
+
