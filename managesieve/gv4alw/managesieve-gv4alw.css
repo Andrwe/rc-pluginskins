@@ -1,0 +1,111 @@
+/***** Roundcube|Filters styles *****/
+
+
+#filterslist
+{
+  left: 10px;
+  top: 60px;
+}
+
+#filtersbuttons
+{
+  left: 10px;
+  top: 36px;
+}
+
+#filtersetsbuttons
+{
+  left: 220px;
+  top: 36px;
+}
+
+#filtersbuttons a.button,
+#filtersbuttons a.buttonPas,
+#filtersetsbuttons a.button,
+#filtersetsbuttons a.buttonPas
+{
+  padding: 0 0;
+  width: 23px;
+  height: 24px;
+}
+
+#filtersbuttons a.addsel {
+  background-position: 0 -24px;
+}
+
+#filtersbuttons a.del {
+  background-position: -25px 0px;
+}
+
+#filtersbuttons a.delsel {
+  background-position: -25px -24px;
+}
+
+#filtersbuttons a.up {
+  background-position: -50px 0px;
+}
+
+#filtersbuttons a.upsel {
+  background-position: -50px -24px;
+}
+
+#filtersbuttons a.down {
+  background-position: -76px 0px;
+}
+
+#filtersbuttons a.downsel {
+  background-position: -76px -24px;
+}
+
+#filtersetsbuttons a.setadd {
+  background-position: -99px 0px;
+}
+
+#filtersetsbuttons a.setaddsel {
+  background-position: -99px -24px;
+}
+
+#filtersetsbuttons a.setdel {
+  background-position: -122px 0px;
+}
+
+#filtersetsbuttons a.setdelsel {
+  background-position: -122px -24px;
+}
+
+#filtersetsbuttons a.setset {
+  background-position: -147px 0px;
+}
+
+#filtersetsbuttons a.setsetsel {
+  background-position: -147px -24px;
+}
+
+#filtersetsbuttons a.setget {
+  background-position: -172px 0px;
+}
+
+#filtersetsbuttons a.setgetsel {
+  background-position: -172px -24px;
+}
+
+#filtersetselect
+{
+  right: 10px;
+  top: 33px;
+  left: inherit;
+}
+
+#filter-box
+{
+  top: 60px;
+  right: 10px;
+}
+
+#filter-form
+{
+  position: relative;
+  top: 24px;	
+  padding: 15px 10px 10px;
+}
+
