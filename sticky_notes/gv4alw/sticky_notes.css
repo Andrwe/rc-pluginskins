@@ -1,0 +1,31 @@
+a.button-sticky_notes,
+a.button-sticky_notes:hover
+{
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  padding: 4px 0 0 0;
+  margin-left: 0;
+  height: 18px;
+  width: 102px;
+  color: #4c5e75;
+  background: url('images/tab-act.png');
+}
+
+a.button-sticky_notes
+{
+  color: white;
+  font-family: Tahoma,arial,"nimbus sans l",sans-serif;
+  font-size: 13px;
+  background: url(images/tab-pas.png);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#notes {
+  position: absolute;
+  top: 60px;
+  width: 98.9%;
+  height: 90%;
+  border: 1px solid #999;
+}
