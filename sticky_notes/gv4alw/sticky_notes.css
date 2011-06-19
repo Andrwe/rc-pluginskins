@@ -1,8 +1,8 @@
 a.button-sticky_notes,
-a.button-sticky_notes.tablink-selected,
-a.button-sticky_notes:hover
+a.button-sticky_notes.tablink-selected
 {
   position: absolute;
+  cursor: pointer;
   text-decoration: none;
   text-align: center;
   top: 0px;
@@ -18,11 +18,17 @@ a.button-sticky_notes
 {
   color: white;
   background: url(images/tab-pas.png);
+}
+
+a.button-sticky_notes:hover
+{
+  background: url(images/tab-act.png);
   cursor: pointer;
+  color: #4c5e75;
 }
 
 a.button-sticky_notes.tablink-selected,
-a.button-sticky_notes:hover
+a.button-sticky_notes.tablink-selected:hover
 {
   background: url(images/tab-act.png);
   cursor: default;
