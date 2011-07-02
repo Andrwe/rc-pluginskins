@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title><roundcube:object name="pagetitle" /></title>
+<roundcube:include file="/includes/links.html" />
+</head>
+<body>
+<roundcube:object name="message" id="message" />
+<roundcube:include file="/includes/taskbar.html" />
+<roundcube:include file="/includes/header.html" />
+<div id="testscontent">
+  <div id="tabs">
+    <ul>
+      <li><a href="#database">Database</a></li>
+      <li><a href="#curl">cURL</a></li>
+    </ul>
+    <div id="database">
+    <roundcube:object name="calendar_tests_database" />
+    </div>
+    <div id="curl">
+    <roundcube:object name="calendar_tests_curl" />
+    </div>
+  </div>
+</div>
+<script> $('#tabs').tabs(); </script>
+</body>
+</html>

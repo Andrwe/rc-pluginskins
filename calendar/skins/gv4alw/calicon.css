@@ -1,0 +1,98 @@
+a.button-calendar,
+a.button-calendar.tablink-selected
+{
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  top: 0px;
+  padding: 4px 0 0 0;
+  margin-left: 0;
+  float: left;
+  height: 18px;
+  width: 102px;
+  font-family: Tahoma,arial,"nimbus sans l",sans-serif;
+  font-size: 13px;
+}
+ 
+a.button-calendar
+{
+  color: white;
+  background: url(images/tab-pas.png);
+}
+
+a.button-calendar:hover
+{
+  background: url(images/tab-act.png);
+  cursor: pointer;
+  color: #4c5e75;
+}
+
+a.button-calendar.tablink-selected,
+a.button-calendar.tablink-selected:hover
+{
+  background: url(images/tab-act.png);
+  cursor: default;
+  color: #4c5e75;
+}
+
+#caltoday,
+#calback,
+#calforward {
+  cursor: auto;
+}
+
+#caltoday a:link {
+  text-decoration:none;
+}
+
+#caltoday a:visited {
+  text-decoration:none;
+}
+
+#calback a:link {
+  text-decoration:none;
+}
+
+#calback a:visited {
+  text-decoration:none;
+}
+
+#calforward a:link {
+  text-decoration:none;
+}
+
+#calforward a:visited {
+  text-decoration:none;
+}
+
+#upcoming-content {
+  position: absolute;
+  bottom: 43px;
+  left: 20px;
+  border: 1px solid #999999;
+  background-color: #F6F6F6;
+  cursor: auto;
+}
+
+#upcoming-container {
+  position: absolute;
+  top: 20px;
+  bottom: 0px;
+  left: 0px;
+  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#upcoming {
+  margin: 0 auto;
+}
+
+#upcoming_1 {
+  margin: 0 auto;
+}
+
+#upcoming_2 {
+  margin: 0 auto;
+}
