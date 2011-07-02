@@ -10,10 +10,22 @@
 
 #rcmliArchives
 {
-  left: 15px
+  left: 15px;
 }
 
 #rcmliArchives a
 {
-  left: -15px
+  left: -15px;
 }
+
+#rcmliArchives li a
+{
+  left: 0;
+}
+
+#mailboxlist li#rcmliArchives div.expanded,
+#mailboxlist li#rcmliArchives div.collapsed
+{
+  left: -7px !important;
+}
+

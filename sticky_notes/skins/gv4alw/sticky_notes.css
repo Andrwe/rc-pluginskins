@@ -1,13 +1,14 @@
 a.button-sticky_notes,
 a.button-sticky_notes.tablink-selected
 {
-  position: absolute;
+  position: relative;
   cursor: pointer;
   text-decoration: none;
   text-align: center;
   top: 0px;
   padding: 4px 0 0 0;
   margin-left: 0;
+  float: left;
   height: 18px;
   width: 102px;
   font-family: Tahoma,arial,"nimbus sans l",sans-serif;
