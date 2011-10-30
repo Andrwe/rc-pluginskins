@@ -15,7 +15,8 @@ a.button-calendar.tablink-selected
   font-size: 13px;
 }
  
-a.button-calendar
+a.button-calendar,
+a.button-calendar:visited
 {
   color: white;
   background: url(images/tab-pas.png);
