@@ -84,8 +84,8 @@
 #calquicksearchbar
 {
   position: absolute;
-  top: 35px;
-  right: 185px;
+  top: 0;
+  right: 160px;
   width: 182px;
   height: 20px;
   text-align: right;
@@ -113,15 +113,15 @@
 #calsearchmod
 {
  position: absolute;
- top: 3px;
- right: 160px;
+ top: 2px;
+ left: 4px;
 }
 
 #calsearchreset
 {
   position: absolute;
   top: 3px;
-  right: 4px;
+  right: -9px;
   text-decoration: none;
 }
 
@@ -225,8 +225,8 @@ pre {
 
 #todaybutton{
   position: absolute;
-  top: 35px;
-  right: 25px;
+  top: 0;
+  right: 0;
 }
 
 #event,

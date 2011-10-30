@@ -13,27 +13,6 @@
 <body onload="rcube_init_plugin_tab()">
 <roundcube:include file="/includes/taskbar.html" />
 <roundcube:include file="/includes/header.html" />
-<div id='calquicksearchbar'>
-<img id='calsearchmod' src='/images/icons/glass_roll.png' width='16' height='16' title="<roundcube:label name="searchmod" />" />
-<input id='calsearchfilter' type='text' name='_cal_searchfilter' autocomplete="off" />
-<a href='#' id='calsearchreset'><img src='/images/icons/reset.gif' width='13' height='13' /></a>
-</div>
-<div id='calsearchdialog' title='<roundcube:label name="calendar.calsearch" />'>
-<table id='calsearch_table' class='records-table' cols='1' cellspacing='0'></table>
-</div>
-<roundcube:object name="cal_searchset" />
-<div id='todaybutton'>
-  <button id="prevbut"><<</button>
-  <button id="todaybut"><roundcube:label name="today" /></button>
-  <button id="nextbut">>></button>
-</div>
-<div id="calendar-header">
-  <div class="boxtitle">
-    <center>
-      <span id="cal_boxtitle" ></span>
-    </center>
-  </div>
-</div>
 <div id="mainscreen">
   <div id="sectionslist">
     <div id="datepicker-title" class="boxtitle"></div>
@@ -57,7 +36,21 @@
         <center>
     			<roundcube:container name="toolbar" id="toolbar" />
           <span id="cal_boxtitle" ></span>
+        <roundcube:object name="cal_searchset" />
         </center>
+        <div id='calquicksearchbar'>
+        <img id='calsearchmod' src='/images/icons/glass_roll.png' width='16' height='16' title="<roundcube:label name="searchmod" />" />
+        <input id='calsearchfilter' type='text' name='_cal_searchfilter' autocomplete="off" />
+        <a href='#' id='calsearchreset'><img src='/images/icons/reset.gif' width='13' height='13' /></a>
+        </div>
+        <div id='calsearchdialog' title='<roundcube:label name="calendar.calsearch" />'>
+        <table id='calsearch_table' class='records-table' cols='1' cellspacing='0'></table>
+        </div>
+        <div id='todaybutton'>
+          <button id="prevbut"><<</button>
+          <button id="todaybut"><roundcube:label name="today" /></button>
+          <button id="nextbut">>></button>
+        </div>
       </div>
     </div>
   </div>
