@@ -16,7 +16,8 @@
 {
   top: 12px;
   position: relative;
-  left: 8px;
+  left: -1px;
+  padding-bottom: 15px;
 }
 
 .ui-datepicker td.ui-datepicker-current-day .ui-state-active
@@ -83,8 +84,8 @@
 #calquicksearchbar
 {
   position: absolute;
-  top: 88px;
-  right: 130px;
+  top: 35px;
+  right: 185px;
   width: 182px;
   height: 20px;
   text-align: right;
@@ -131,9 +132,9 @@
   right: 0;
   bottom: 0;
   z-index: 4999;
-  background: rgba(0,0,0,0.5) !important;
-  background: #F6F6F6;
-  
+  background-color: rgba(0,0,0,0.5) !important;
+  background-color: #F6F6F6;
+  background: url(../../../../skins/default/images/display/loading.gif) 100px 100px no-repeat;
   /** IE hacks */
   filter: alpha(opacity=90);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
@@ -154,7 +155,7 @@
   top: 0px;
   bottom: 0px;
   left: 0px;
-  right: 0px;  
+  right: 0px; 
 }
 
 #calendar-header {
@@ -166,13 +167,15 @@
   font-size: 11px;
 }
 
+#upcoming {
+  margin: 0 auto;
+}
+
 #upcoming-maincontainer {
   cursor: auto;
   width: 100%;
   height: 100%;
   overflow: hidden;
-  position: relative;
-  top: 25px;
 }
 
 #sectionslist {
@@ -222,7 +225,7 @@ pre {
 
 #todaybutton{
   position: absolute;
-  top: 85px;
+  top: 35px;
   right: 25px;
 }
 
@@ -247,11 +250,6 @@ pre {
 .ui-widget-header,
 .ui-widget-content {
   font-weight: normal;
-}
-
-div.ui-widget-header
-{
-  height: auto;
 }
 
 .fc-event-skin {

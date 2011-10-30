@@ -43,3 +43,12 @@ a.button-sticky_notes.tablink-selected:hover
   height: 90%;
   border: 1px solid #999;
 }
+
+#notes-container{
+  margin:0 auto;
+  position:absolute;
+  top:35px;
+  bottom:0px;
+  left:10px;
+  right:10px; 
+}

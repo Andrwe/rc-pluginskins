@@ -3,15 +3,14 @@
 <head>
 <title><roundcube:object name="pagetitle" /></title>
 <roundcube:include file="/includes/links.html" />
-<link type="text/css" href="/this/jquery.stickynotes.css" rel="stylesheet" />
 <script type="text/javascript" src="/functions-gv4alw.js"></script>		
 </head>
 <body onload="rcube_init_plugin_tab()">
 <roundcube:include file="/includes/taskbar.html" />
 <roundcube:include file="/includes/header.html" />
-<span>&nbsp;</span>
-<div id="notes"></div>
-<script type="text/javascript" src="/this/jquery.stickynotes.js"></script>		
-<roundcube:object name="sticky_notes_js" />
+<div id="notes">
+<a id="addButton" href="./?_task=dummy&_action=plugin.sticky_notes_new_sticky_note&_form=1"><roundcube:label name='sticky_notes.add_note' /></a>
+<div id="notes-container"></div>
+</div>
 </body>
 </html>

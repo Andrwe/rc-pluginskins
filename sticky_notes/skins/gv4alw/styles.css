@@ -1,0 +1,174 @@
+.note{
+	height:150px;
+	padding:10px;
+	width:150px;
+	position:absolute;
+	overflow:hidden;
+	cursor:move;
+	font-family:Trebuchet MS,Tahoma,Myriad Pro,Arial,Verdana,sans-serif;
+	font-size:22px;
+	/* Adding a CSS3 shadow below the note, in the browsers which support it: */
+	-moz-box-shadow:2px 2px 0 #DDDDDD;
+	-webkit-box-shadow:2px 2px 0 #DDDDDD;
+	box-shadow:2px 2px 0 #DDDDDD;
+}
+
+#fancy_ajax .note{	cursor:default; }
+
+/* Three styles for the notes: */
+
+.yellow{
+	background-color:#FDFB8C;
+	border:1px solid #DEDC65;	
+}
+
+.blue{
+	background-color:#A6E3FC;
+	border:1px solid #75C5E7;	
+}
+
+.green{
+	background-color:#A5F88B;
+	border:1px solid #98E775;	
+}
+
+/* Each note has a data span, which holds its ID */
+span.data{	display:none; }
+
+/* The "Add a note" button: */
+#addButton{
+  position:absolute;
+  top:0px;
+  right:0px;
+  margin:4px;
+  padding:4px 10px 4px 7px;
+  color: #333333;
+  font-size: 11px;
+  padding-left: 8px;
+  padding-right: 8px;
+  background: url(../../../../skins/gv4alw/images/buttons/bg.gif) repeat-x #f0f0f0;
+  border: 1px solid #a4a4a4;
+}
+
+/* Green button class: */
+a.green-button,a.green-button:visited
+{
+	color:black;
+	display:block;
+	font-size:10px;
+	font-weight:bold;
+	height:15px;
+	padding:6px 5px 4px;
+	text-align:center;
+	width:60px;
+	
+	text-shadow:1px 1px 1px #DDDDDD;
+	background:url(images/button_green.png) no-repeat left top;
+}
+
+a.green-button:hover
+{
+	text-decoration:none;
+	background-position:left bottom;
+}
+
+.summary{
+	/* The author name on the note: */
+	bottom:10px;
+	color:#666666;
+	font-family:Arial,Verdana,sans-serif;
+	font-size:12px;
+	position:absolute;
+	right:10px;
+}
+
+.delete{
+	/* Delete note: */
+	bottom:10px;
+	color:#666666;
+	font-family:Arial,Verdana,sans-serif;
+	font-size:10px;
+	position:absolute;
+	left:10px;
+	width: 15px;
+	height: 15px;
+	background:url(images/delete.png) no-repeat left top;
+}
+
+.edit{
+	/* Edit note: */
+	bottom:10px;
+	color:#666666;
+	font-family:Arial,Verdana,sans-serif;
+	font-size:10px;
+	position:absolute;
+	left:30px;
+	width: 15px;
+	height: 15px;
+	background:url(images/edit.png) no-repeat left top;
+}
+
+h3.popupTitle{
+	border-bottom:1px solid #DDDDDD;
+	color:#666666;
+	font-size:24px;
+	font-weight:normal;
+	padding:0 0 5px;
+}
+
+#noteData{
+	/* The input form in the pop-up: */
+	height:220px;
+	margin:30px 0 0 200px;
+	width:350px;
+}
+
+.note-form label{
+	display:block;
+	font-size:10px;
+	font-weight:bold;
+	letter-spacing:1px;
+	text-transform:uppercase;
+	padding-bottom:3px;
+}
+
+.note-form textarea, .note-form input[type=text]{
+	background-color:#FCFCFC;
+	border:1px solid #AAAAAA;
+	font-family:Arial,Verdana,sans-serif;
+	font-size:16px;
+	height:60px;
+	padding:5px;
+	width:300px;
+	margin-bottom:10px;
+	resize: none;
+}
+
+.note-form input[type=text]{
+  height:auto;
+}
+
+.color{
+	/* The color swatches in the form: */
+	cursor:pointer;
+	float:left;
+	height:10px;
+	margin:0 5px 0 0;
+	width:10px;
+}
+
+#note-submit{
+  margin:20px auto;
+}
+
+/* The styles below are only necessary for the demo page */
+
+a, a:visited {
+	color:#0196e3;
+	text-decoration:none;
+	outline:none;
+}
+
+a:hover{
+	text-decoration:none;
+}

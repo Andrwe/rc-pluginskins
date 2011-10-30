@@ -23,7 +23,16 @@
 </div>
 <roundcube:object name="cal_searchset" />
 <div id='todaybutton'>
-  <button id="todaybut"><label for="today"><roundcube:label name="today" /></label></button>
+  <button id="prevbut"><<</button>
+  <button id="todaybut"><roundcube:label name="today" /></button>
+  <button id="nextbut">>></button>
+</div>
+<div id="calendar-header">
+  <div class="boxtitle">
+    <center>
+      <span id="cal_boxtitle" ></span>
+    </center>
+  </div>
 </div>
 <div id="mainscreen">
   <div id="sectionslist">
@@ -66,8 +75,7 @@
 </div>
 <div id="calfilter">
   <form name="filter" id="filter" method="post" action="./?_task=dummy&_action=plugin.calendar_setfilters">
-    <label for="filter_events"><roundcube:label name="calendar.filter_events" /></label>:
-    <br /><br />
+    <br />
     <div id="calfilterscontainer"></div>
   </form>
 </div>
