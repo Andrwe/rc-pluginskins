@@ -1,39 +1,23 @@
-a.button-sticky_notes,
-a.button-sticky_notes.tablink-selected
-{
-  position: relative;
-  cursor: pointer;
-  text-decoration: none;
-  text-align: center;
-  top: 0px;
-  padding: 4px 0 0 0;
-  margin-left: 0;
-  float: left;
-  height: 18px;
-  width: 102px;
-  font-family: Tahoma,arial,"nimbus sans l",sans-serif;
-  font-size: 13px;
-}
- 
-a.button-sticky_notes
-{
-  color: white;
-  background: url(images/tab-pas.png);
+#taskbar a.button-sticky_notes {
+  background: url(images/sticky_notes.png) 0px 4px no-repeat;
 }
 
-a.button-sticky_notes:hover
-{
-  background: url(images/tab-act.png);
-  cursor: pointer;
-  color: #4c5e75;
+#calicon {
+  background: url(images/calendar.png) 0px 4px no-repeat;
+  position:absolute;
+  top:15px;
+  right:10px;
+  width:22px;
+  height:22px;
 }
 
-a.button-sticky_notes.tablink-selected,
-a.button-sticky_notes.tablink-selected:hover
-{
-  background: url(images/tab-act.png);
-  cursor: default;
-  color: #4c5e75;
+#date {
+  display:none;
+  position:absolute;
+  top:18px;
+  right:175px;
+  width:50px;
+  height:22px;
 }
 
 #notes {

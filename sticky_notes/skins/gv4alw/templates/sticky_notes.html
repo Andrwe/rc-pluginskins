@@ -9,7 +9,10 @@
 <roundcube:include file="/includes/taskbar.html" />
 <roundcube:include file="/includes/header.html" />
 <div id="notes">
-<a id="addButton" href="./?_task=dummy&_action=plugin.sticky_notes_new_sticky_note&_form=1"><roundcube:label name='sticky_notes.add_note' /></a>
+<div id="menu">
+  <a id="reassembleButton" href="#"><roundcube:label name='sticky_notes.reassemble_notes' /></a>
+  <a id="addButton" href="./?_task=dummy&_action=plugin.sticky_notes_new_sticky_note&_form=1"><roundcube:label name='sticky_notes.add_note' /></a>
+</div>
 <div id="notes-container"></div>
 </div>
 </body>

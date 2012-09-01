@@ -13,9 +13,21 @@
 	box-shadow:2px 2px 0 #DDDDDD;
 }
 
+.body{
+  margin:0px;
+  margin-top:-5px;
+  height:138px;
+  font-family:Arial,Verdana,sans-serif;
+  overflow:hidden;
+}
+
 #fancy_ajax .note{	cursor:default; }
 
-/* Three styles for the notes: */
+/* Default colors */
+.default{
+	background-color:#FDFB8C;
+	border:1px solid #DEDC65;	
+}
 
 .yellow{
 	background-color:#FDFB8C;
@@ -35,12 +47,16 @@
 /* Each note has a data span, which holds its ID */
 span.data{	display:none; }
 
-/* The "Add a note" button: */
-#addButton{
+#menu{
   position:absolute;
   top:0px;
   right:0px;
   margin:4px;
+}
+
+/* The "Add a note" button and the "Reassemble notes" button: */
+#addButton,
+#reassembleButton{
   padding:4px 10px 4px 7px;
   color: #333333;
   font-size: 11px;
@@ -48,28 +64,6 @@ span.data{	display:none; }
   padding-right: 8px;
   background: url(../../../../skins/gv4alw/images/buttons/bg.gif) repeat-x #f0f0f0;
   border: 1px solid #a4a4a4;
-}
-
-/* Green button class: */
-a.green-button,a.green-button:visited
-{
-	color:black;
-	display:block;
-	font-size:10px;
-	font-weight:bold;
-	height:15px;
-	padding:6px 5px 4px;
-	text-align:center;
-	width:60px;
-	
-	text-shadow:1px 1px 1px #DDDDDD;
-	background:url(images/button_green.png) no-repeat left top;
-}
-
-a.green-button:hover
-{
-	text-decoration:none;
-	background-position:left bottom;
 }
 
 .summary{
@@ -114,6 +108,12 @@ h3.popupTitle{
 	font-size:24px;
 	font-weight:normal;
 	padding:0 0 5px;
+}
+
+#noteSubmit{
+  position:absolute;
+  right:50px;
+  bottom:20px;
 }
 
 #noteData{
