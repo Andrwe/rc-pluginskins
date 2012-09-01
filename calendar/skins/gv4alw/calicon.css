@@ -30,7 +30,7 @@
 
 #upcoming-content {
   position: absolute;
-  bottom: 43px;
+  bottom: 33px;
   left: 10px;
   border: 1px solid #999999;
   background-color: #F6F6F6;
@@ -57,4 +57,9 @@
 
 #upcoming_2 {
   margin: 0 auto;
+}
+
+#upcoming_preview pre {
+  font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+  font-size: 12px;
 }

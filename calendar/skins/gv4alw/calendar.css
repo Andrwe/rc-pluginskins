@@ -1,15 +1,40 @@
-#messagetoolbar
-{
-	padding: 0;
+.timeline {
+  position: absolute;
+  left: 59px;
+  border: none;
+  border-top: 1px solid #DC5757;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 999;
 }
 
-#messagetoolbar span#calfiltercontent a,
-#messagetoolbar div#calusernamecontent,
-#messagetoolbar div#calusernamecontent a
-{
-	float: none;
-  display: inline;
-  color: white;
+ul.caltoolbarmenu {
+  margin: -4px 0 -4px 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul.caltoolbarmenu li {
+  font-size: 11px;
+  white-space: nowrap;
+  min-width: 130px;
+  margin: 2px -4px;
+}
+
+ul.caltoolbarmenu li input {
+  vertical-align: middle;
+}
+
+#recurringdialog{
+  position: absolute;
+  padding: 10px;10px;10px;10px;
+  width: 350px;
+  top: 200px;
+  margin-left: -175px;
+  left: 50%;
+  z-index: 5000;
+  background-color:#F6F6F6;
 }
 
 #jqdatepicker
@@ -20,9 +45,26 @@
   padding-bottom: 15px;
 }
 
+div.ui-datepicker
+{
+  box-shadow: 0 0 9px #666666;
+}
+
+div.ui-datepicker div.ui-datepicker-header
+{
+  border: 0 none;
+  border-radius: 3px 3px 0 0;
+  height: 26px;
+  padding: 2px 4px 0 !important;
+  vertical-align: middle;
+  font-size: 14px;
+  color: white;
+  background: none #AABDCC;
+}
+
 .ui-datepicker td.ui-datepicker-current-day .ui-state-active
 {
-  background-color: #E2F4F5;
+  background: none #E2F4F5;
   color: black;
 }
 
@@ -167,15 +209,13 @@
   font-size: 11px;
 }
 
-#upcoming {
-  margin: 0 auto;
-}
-
 #upcoming-maincontainer {
   cursor: auto;
   width: 100%;
   height: 100%;
   overflow: hidden;
+  position: relative;
+  top: 8px;
 }
 
 #sectionslist {
@@ -209,12 +249,33 @@
   margin-top: 60px;
 }
 
+#agendalist {
+  width: 700px;
+}
+
 #print {
   width: 680px;
 }
 
+.print {
+  margin: 1px;
+}
+
 pre {
  font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+}
+
+#messagetoolbar {
+	padding: 0;
+}
+
+#messagetoolbar span#calfiltercontent a,
+#messagetoolbar div#calusernamecontent,
+#messagetoolbar div#calusernamecontent a
+{
+	float: none;
+  display: inline;
+  color: white;
 }
 
 #toolbar {
@@ -276,3 +337,48 @@ pre {
 .fc-grid .fc-event-time {
   font-weight: normal;
 }
+
+div#event a.tablink
+{
+  width: 102px;
+  height: 18px !important;
+  font-family: Tahoma,arial,"nimbus sans l",sans-serif;
+  font-size: 13px;
+  text-align: center;
+  background: url(images/tab-pas.png);
+  padding: 4px 0;
+  text-decoration: none;
+  border: none;
+  color: #DEE7EF;
+}
+
+div#event li a.tablink-selected
+{
+  background: url(images/tab-act.png);
+  cursor: default;
+  margin-left: 0px;
+  color: #4c5e75;
+}
+
+div#event a.tablink:not(.tablink-selected):hover
+{
+  color: #4c5e75;
+  background: url('images/tab-act.png');
+}
+
+div#event .ui-tabs-nav
+{
+  height: auto;
+}
+
+div#event .ui-tabs-nav li
+{
+  background: none;
+  padding: 0;
+}
+
+div#event .ui-tabs-panel
+{
+  margin: 0;
+}
+

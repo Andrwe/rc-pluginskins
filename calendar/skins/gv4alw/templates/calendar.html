@@ -8,6 +8,7 @@
 <link rel="stylesheet" type="text/css" href="skins/gv4alw/mail.css" />
 <link rel="stylesheet" type="text/css" href="skins/gv4alw/mail-gv4alw.css" />
 <roundcube:include file="/includes/links.html" />
+<roundcube:object name="cal_category_css" />
 <script type="text/javascript" src="/functions-gv4alw.js"></script>
 </head>
 <body onload="rcube_init_plugin_tab()">
@@ -47,9 +48,9 @@
         <table id='calsearch_table' class='records-table' cols='1' cellspacing='0'></table>
         </div>
         <div id='todaybutton'>
-          <button id="prevbut"><<</button>
-          <button id="todaybut"><roundcube:label name="today" /></button>
-          <button id="nextbut">>></button>
+          <button id="prevbut" title="<roundcube:label name="calendar.prevrange" />"><<</button>
+          <button id="todaybut" disabled="disabled"><roundcube:label name="today" /></button>
+          <button id="nextbut" title="<roundcube:label name="calendar.nextrange" />">>></button>
         </div>
       </div>
     </div>
@@ -59,7 +60,7 @@
     </div>
   </div>
 </div>
-<roundcube:include skin_path="plugins/calendar/skins" file="/includes/event.html" />
+<roundcube:include skin_path="plugins/calendar/skins" file="/include/event.html" />
 <div id="calswitch">
   <form name="switch" id="switch" method="post" action="./?_task=dummy&_action=plugin.calendar">
     <label for="cal_user"><roundcube:label name="calendar.cal_user" /></label>:&nbsp;
@@ -72,7 +73,6 @@
     <div id="calfilterscontainer"></div>
   </form>
 </div>
-<roundcube:object name="cal_category_css" />
 <div id="calendaroverlay"></div>
 </body>
 </html>
