@@ -1,6 +1,22 @@
-#mailboxlist li._archives a:hover
+#messagetoolbar a.archivefolder,
+#messagetoolbar a.archivefolderSel
 {
-  background-position: 6px 0;
+  background-image: url(archive.png);
+  background-position: center 0;
+}
+
+#mailboxlist li.archive,
+#mailboxlist li.archive:hover
+{
+  background-image: url('foldericon.png');
+  background-position: 15px 0;
+  background-repeat: no-repeat;
+}
+
+#mailboxlist li.archive a:hover
+{
+  background-image: inherit;
+  background-position: 4px 0;
 }
 
 #rcmContextMenu .archive a
