@@ -1,9 +1,3 @@
-.boxcontent
-{
-  top: 23px;
-  position: relative;
-}
-
 #accounts
 {
   position: absolute;
@@ -28,23 +22,36 @@
   color: #333333;
 }
 
+table.records-table tbody tr:hover:first-child > td,
+table.records-table tbody tr:first-child td:hover
+{
+  background-color: #FFFFFF;
+  border: medium none;
+  color: black;
+  font-weight: normal;
+}
+
 #accounts select
 {
   font-size: 11px;
   width: 136px; 
 }
 
-#prefs-details div.userprefs-accountblock
+table#sections-table
 {
-  margin-right: 14px;
-  min-width: 450px;
-  padding: 5px 0px 0px 0px;
-  width: 100%; 
+  position: relative;
+  top: 24px;
 }
 
-#prefs-details div.userprefs-accountblock-border
+div#prefs-details input.button
 {
-  background-color: #EBEBEB;
-  border: 1px solid #999999;
+  position: relative;
+  top: 18px;
+}
+
+div.settingsplugin input.button
+{
+  position: relative;
+  bottom: 10px;
 }
 
