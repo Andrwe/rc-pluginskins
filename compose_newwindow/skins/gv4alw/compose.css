@@ -13,6 +13,12 @@
 #compose-container {
   margin-top: -55px;
 }
+
 #compose-attachments {
   margin-top: -55px;
+}
+
+#compose-headers-div #messagetoolbar
+{
+  z-index: 1000;
 }
